@@ -1,0 +1,38 @@
+[
+  {
+    "question": "What problem does this work address, and why does it matter?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "What is the main contribution or key idea of this work?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "Which datasets or benchmarks were used in the experiments?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "What are the main results reported?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "What limitations or weaknesses do the authors acknowledge?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "What future work do the authors suggest?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  }
+]

@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+sqlalchemy
+openai
+chromadb
+rank-bm25
+pypdf
+python-multipart
+pytest

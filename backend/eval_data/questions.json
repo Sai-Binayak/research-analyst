@@ -1,0 +1,178 @@
+[
+  {
+    "question": "Why is scaling applied to the dot products in dot-product attention for large key dimensions?",
+    "gold_answer": "To counteract the effect where large dot products grow in magnitude and push the softmax function into regions with extremely small gradients.",
+    "gold_chunk_ids": [
+      "d1-p4-c2"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.4"
+  },
+  {
+    "question": "What is the key advantage of self-attention layers over recurrent layers regarding path length between input and output positions?",
+    "gold_answer": "A self-attention layer connects all positions with a constant number of sequentially executed operations, whereas a recurrent layer requires O(n) sequential operations.",
+    "gold_chunk_ids": [
+      "d1-p6-c4"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.6"
+  },
+  {
+    "question": "What beam size and length penalty were used during beam search for the model inference?",
+    "gold_answer": "A beam size of 4 and a length penalty alpha of 0.6 were used.",
+    "gold_chunk_ids": [
+      "d1-p8-c3"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.8"
+  },
+  {
+    "question": "What specific values and formula were used for the learning rate schedule with the Adam optimizer?",
+    "gold_answer": "The Adam optimizer was used with beta_1 = 0.9, beta_2 = 0.98, and epsilon = 10^-9. The learning rate varied according to the formula: lrate = d_model^(-0.5) * min(step_num^(-0.5), step_num * warmup_steps^(-1.5)), with warmup_steps set to 4000.",
+    "gold_chunk_ids": [
+      "d1-p7-c4"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.7"
+  },
+  {
+    "question": "What is the inner-layer dimensionality of the feed-forward network in the encoder and decoder layers?",
+    "gold_answer": "2048",
+    "gold_chunk_ids": [
+      "d1-p5-c3"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.5"
+  },
+  {
+    "question": "What is the output dimension (dmodel) produced by the sub-layers and embedding layers in the model?",
+    "gold_answer": "512",
+    "gold_chunk_ids": [
+      "d1-p3-c1"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.3"
+  },
+  {
+    "question": "What is self-attention also known as, and what is its primary function?",
+    "gold_answer": "Self-attention is sometimes called intra-attention, and it is an attention mechanism that relates different positions of a single sequence in order to compute a representation of the sequence.",
+    "gold_chunk_ids": [
+      "d1-p2-c4"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.2"
+  },
+  {
+    "question": "What label smoothing value was utilized during the training of the transformer model?",
+    "gold_answer": "epsilon_ls = 0.1",
+    "gold_chunk_ids": [
+      "d1-p8-c1"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.8"
+  },
+  {
+    "question": "What mathematical operations are performed on the query and key dot products to determine the weights for the values in Scaled Dot-Product Attention?",
+    "gold_answer": "The dot products of the query with all keys are divided by the square root of dk, and then a softmax function is applied to obtain the weights on the values.",
+    "gold_chunk_ids": [
+      "d1-p4-c0"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.4"
+  },
+  {
+    "question": "What is the primary architecture of the Transformer sequence transduction model for replacing recurrent layers?",
+    "gold_answer": "Multi-headed self-attention",
+    "gold_chunk_ids": [
+      "d1-p10-c2"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.10"
+  },
+  {
+    "question": "What dataset and vocabulary size were used for training the WMT 2014 English-German models?",
+    "gold_answer": "The models were trained on the standard WMT 2014 English-German dataset of about 4.5 million sentence pairs, encoded using byte-pair encoding with a shared source-target vocabulary of about 37000 tokens.",
+    "gold_chunk_ids": [
+      "d1-p7-c2"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.7"
+  },
+  {
+    "question": "What is the name of the novel model architecture that relies entirely on attention mechanisms and completely avoids recurrence?",
+    "gold_answer": "The Transformer",
+    "gold_chunk_ids": [
+      "d1-p2-c2"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.2"
+  },
+  {
+    "question": "What inherent limitation of recurrent neural networks prevents parallelization within training examples during sequence modeling?",
+    "gold_answer": "Their inherently sequential nature of factoring computation along symbol positions and generating hidden states as a function of previous hidden states precludes parallelization.",
+    "gold_chunk_ids": [
+      "d1-p2-c0"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.2"
+  },
+  {
+    "question": "Why did the researchers choose the sinusoidal version of positional embeddings over learned positional embeddings?",
+    "gold_answer": "They chose the sinusoidal version because it may allow the model to extrapolate to sequence lengths longer than the ones encountered during training.",
+    "gold_chunk_ids": [
+      "d1-p6-c2"
+    ],
+    "gold_phrases": [],
+    "category": "specific",
+    "source": "test_paper_01.pdf p.6"
+  },
+  {
+    "question": "What problem does this work address, and why does it matter?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "What is the main contribution or key idea of this work?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "Which datasets or benchmarks were used in the experiments?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "What are the main results reported?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "What limitations or weaknesses do the authors acknowledge?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  },
+  {
+    "question": "What future work do the authors suggest?",
+    "gold_chunk_ids": [],
+    "gold_phrases": [],
+    "category": "generic"
+  }
+]
